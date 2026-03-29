@@ -2,6 +2,7 @@
   "expo": {
     "name": "Inspo",
     "slug": "inspo",
+    "scheme": "inspo",
     "version": "1.0.0",
     "orientation": "portrait",
     "ios": {
