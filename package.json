@@ -1,7 +1,7 @@
 {
   "name": "inspo",
   "version": "1.0.0",
-  "main": "expo-router/entry",
+  "main": "App.tsx",
   "scripts": { "start": "expo start" },
   "dependencies": {
     "expo": "~51.0.0",
