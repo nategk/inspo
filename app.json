@@ -1,0 +1,24 @@
+{
+  "expo": {
+    "name": "Inspo",
+    "slug": "inspo",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "ios": {
+      "bundleIdentifier": "com.nategk.inspo",
+      "supportsTablet": false
+    },
+    "plugins": [
+      [
+        "expo-share-intent",
+        {
+          "iosActivationRules": {
+            "NSExtensionActivationSupportsImageWithMaxCount": 10,
+            "NSExtensionActivationSupportsWebURLWithMaxCount": 1
+          }
+        }
+      ],
+      "expo-sqlite"
+    ]
+  }
+}
