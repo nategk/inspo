@@ -1,19 +1,26 @@
-name: EAS Build
+# Build Configuration
+
+name: Build
+
 on:
   push:
-    branches: [main]
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with:
-          node-version: 20
-      - uses: expo/expo-github-action@v8
-        with:
-          eas-version: latest
-          token: ${{ secrets.EXPO_TOKEN }}
-      - run: npm install --legacy-peer-deps
-      - run: eas build --platform ios --profile development --non-interactive
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build Project
+        run: npm run build
+
+      - name: Deploy
+        env:
+          EXPO_TOKEN: ${{ secrets.INSPO }}
+        run: expo publish
