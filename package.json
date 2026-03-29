@@ -1,0 +1,15 @@
+{
+  "name": "inspo",
+  "version": "1.0.0",
+  "main": "expo-router/entry",
+  "scripts": { "start": "expo start" },
+  "dependencies": {
+    "expo": "~51.0.0",
+    "expo-file-system": "~17.0.0",
+    "expo-image-picker": "~15.0.0",
+    "expo-share-intent": "^3.0.0",
+    "expo-sqlite": "~14.0.0",
+    "react": "18.2.0",
+    "react-native": "0.74.0"
+  }
+}
