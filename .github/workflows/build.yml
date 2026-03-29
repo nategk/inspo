@@ -17,8 +17,9 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build Project
+      - name: Build
         run: npm run build
+        working-directory: ./
 
       - name: Deploy
         env:
