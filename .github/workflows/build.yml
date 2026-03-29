@@ -20,7 +20,7 @@ jobs:
       - name: Install EAS CLI
         run: npm install -g eas-cli
 
-      - name: Build iOS (Development)
-        run: eas build -p ios --profile development --non-interactive
+      - name: Build iOS (Preview)
+        run: eas build -p ios --profile preview --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.INSPO }}
