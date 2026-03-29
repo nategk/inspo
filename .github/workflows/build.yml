@@ -18,7 +18,7 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npx expo build:android --project-dir .
+        run: npm run build
 
       - name: Deploy
         env:
