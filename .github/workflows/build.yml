@@ -17,10 +17,10 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Build
-        run: npm run build
+      - name: Install EAS CLI
+        run: npm install -g eas-cli
 
-      - name: Deploy
+      - name: Build iOS (Development)
+        run: eas build -p ios --profile development --non-interactive
         env:
           EXPO_TOKEN: ${{ secrets.INSPO }}
-        run: expo publish
