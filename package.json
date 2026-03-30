@@ -1,1 +1,23 @@
-{\n  "name": "inspo",\n  "version": "1.0.0",\n  "main": "App.tsx",\n  "scripts": {\n    "start": "expo start",\n    "build": "eas build -p ios --profile preview --non-interactive"\n  },\n  "dependencies": {\n    "expo": "~52.0.0",\n    "expo-file-system": "~18.0.0",\n    "expo-image-picker": "~16.0.0",\n    "expo-share-intent": "^3.0.0",\n    "expo-sqlite": "~15.0.0",\n    "react": "18.2.0",\n    "react-native": "0.76.0"\n  },\n  "devDependencies": {\n    "typescript": "^5.3.3",\n    "@types/react": "~18.2.0",\n    "@types/react-native": "~0.76.0"\n  }\n}
+{
+  "name": "inspo",
+  "version": "1.0.0",
+  "main": "App.tsx",
+  "scripts": {
+    "start": "expo start",
+    "build": "eas build -p ios --profile preview --non-interactive"
+  },
+  "dependencies": {
+    "expo": "~52.0.0",
+    "expo-file-system": "~18.0.0",
+    "expo-image-picker": "~16.0.0",
+    "expo-share-intent": "^3.0.0",
+    "expo-sqlite": "~15.0.0",
+    "react": "18.2.0",
+    "react-native": "0.76.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3",
+    "@types/react": "~18.2.0",
+    "@types/react-native": "~0.76.0"
+  }
+}
